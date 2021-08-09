@@ -20,7 +20,7 @@ class View
                     include $viewPath;
                 return ob_get_clean();
             } else {
-                echo "Не найден файл с представлением по пути $viewPath"; die();
+                echo "Does not found $viewPath"; die();
             }
         }
     }

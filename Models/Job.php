@@ -7,14 +7,6 @@ use Core\Model;
 
 class Job extends Model
 {
-    public function getById($id)
-    {
-        return $this->findOne("
-            SELECT s.id, s.name, s.surname, s.titul, s.birthday, jt.title as job_title FROM staff s 
-            JOIN job_titles jt ON s.job_title=jt.id
-            WHERE s.id=$id
-        ");
-    }
 
     public function getAll()
     {
