@@ -28,6 +28,7 @@
                         <div class="navbar-nav">
                             <a class="nav-link" aria-current="page" href="/">Employees</a>
                             <a class="nav-link active" href="/jobs">Jobs</a>
+                            <a class="nav-link" href="/file.csv">CSV</a>
                         </div>
                     </div>
                 </div>

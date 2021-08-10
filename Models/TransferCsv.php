@@ -1,11 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace Core;
-
+namespace Models;
 
 require_once $_SERVER['DOCUMENT_ROOT'] . './Core/Model.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . './conf/connection.php';
+
+use Core\Model;
 
 class TransferCsv extends Model
 {
