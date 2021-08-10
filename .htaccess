@@ -1,4 +1,6 @@
 RewriteEngine On
 RewriteBase /
 
+#RewriteCond %{REQUEST_URI} !^/dir/file\.csv
+#RewriteCond %{REQUEST_URI} !^/cli\.php
 RewriteRule .+ index.php

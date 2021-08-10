@@ -10,7 +10,7 @@ class Employee extends Model
     public function getAll()
     {
         return $this->findMany("
-            SELECT s.id, s.name, s.surname, s.titul, s.birthday, jt.title as job_title FROM staff s
+            SELECT s.id, s.name, s.surname, s.titul, s.birthday, s.job_title as job_id, jt.title as job_title FROM staff s
             JOIN job_titles jt ON jt.id=s.job_title
         ");
     }

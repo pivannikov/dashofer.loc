@@ -4,7 +4,7 @@ declare(strict_types = 1);
 namespace Core;
 
 
-require_once $_SERVER['DOCUMENT_ROOT'] . 'Core/Model.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . './Core/Model.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . './conf/connection.php';
 
 class TransferCsv extends Model

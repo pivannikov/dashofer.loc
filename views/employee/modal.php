@@ -73,6 +73,7 @@
                     <div class="mb-3">
                         <label for="jobInput" class="form-label">Job title</label>
                         <select class="form-select" name="job_title" aria-label="Default select example" id="jobInput">
+                            <option selected value="<?php echo $employee['job_id']; ?>"><?php echo $employee['job_title']; ?></option>
                             <?php foreach($jobs as $job): ?>
                                 <option value="<?php echo $job['id']; ?>"><?php echo $job['title']; ?></option>
                             <?php endforeach; ?>
